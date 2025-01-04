@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Психологічна допомога — підтримка у важкі моменти життя">
+  <meta name="keywords" content="психологічна допомога, психологи, підтримка, консультації, тренінги">
+  <meta property="og:title" content="Психологічна допомога">
+  <meta property="og:description" content="Ми надаємо професійну психологічну допомогу через консультації та онлайн підтримку">
+  <meta property="og:image" content="images/og-image.jpg">
+  <title>Психологічна допомога</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Психологічна допомога</h1>
+      <ul>
+        <li><a href="#home">Головна</a></li>
+        <li><a href="#about">Про нас</a></li>
+        <li><a href="#services">Послуги</a></li>
+        <li><a href="#resources">Ресурси</a></li>
+        <li><a href="#contact">Контакти</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Ласкаво просимо!</h2>
+      <p>Ми допомагаємо знайти гармонію та спокій у житті.</p>
+      <img src="images/home.jpg" alt="Гармонія та спокій"/>
+    </section>
+
+    <section id="about">
+      <h2>Про нас</h2>
+      <p>Команда професійних психологів, яка завжди поруч із вами.</p>
+      <img src="images/about.jpg" alt="Професійні психологи"/>
+    </section>
+
+    <section id="services">
+      <h2>Послуги</h2>
+      <p>Консультації, тренінги, онлайн підтримка.</p>
+    </section>
+
+    <section id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Детальніше про послуги</h3>
+            <p>Ми пропонуємо індивідуальні та групові сесії, а також онлайн консультації.</p>
+        </div>
+    </section>
+    <button id="modal-btn">Дізнатися більше</button>
+
+    <section id="resources">
+      <h2>Ресурси</h2>
+      <p>Корисні статті та матеріали для покращення емоційного стану.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Контакти</h2>
+      <form id="contact-form">
+        <label for="name">Ім'я:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Повідомлення:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Відправити</button>
+      </form>
+      <div id="form-response" style="display:none;">
+        <p>Дякуємо за ваше повідомлення! Ми скоро з вами зв'яжемось!</p>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h2>Відгуки клієнтів</h2>
+      <div class="slider">
+        <div class="slide active">
+          <p>"Психологічна допомога змінила моє життя! Дякую!"</p>
+          <span>- Олена</span>
+        </div>
+        <div class="slide">
+          <p>"Чудова команда професіоналів! Рекомендую всім."</p>
+          <span>- Андрій</span>
+        </div>
+        <div class="slide">
+          <p>"Завжди відчуваю підтримку та розуміння. Ви найкращі!"</p>
+          <span>- Марія</span>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <button id="prev">&lt;</button>
+        <button id="next">&gt;</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
